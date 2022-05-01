@@ -23,7 +23,7 @@ const Home = () => {
             {loading ? (
                 <h1>loading...</h1>
             ) : (
-                <div>
+                <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "flex-start" }}>
                     {movies.map((movie) => (
                         <Movie key={movie.id} id={movie.id} coverImage={movie.medium_cover_image} title={movie.title} genres={movie.genres} />
                     ))}

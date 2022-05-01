@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-
+import styles from "../styles/style.movie.css";
 const Movie = ({ id, coverImage, title, genres }) => {
     return (
-        <div>
+        <div className="movieBox">
             {coverImage ? <img src={coverImage} alt={title} /> : null}
             <h3>
                 <Link to={`/movie/${id}`}>{title}</Link>
